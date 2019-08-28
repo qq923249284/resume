@@ -6,10 +6,17 @@
 
 /* nav */
 .navbar-default .navbar-brand {
-    color: #0080BA;
+    color: rgb(36, 37, 37);
     font-size: 30px;
     height: 70px;
     line-height: 35px;
+    font-family: 'Monoton', cursive;
+    animation: breathe 3s infinite;
+}
+@keyframes breathe {
+    0% {text-shadow: 2px 2px 5px rgb(240, 240, 245);}
+    45%,55% {text-shadow: 2px 2px 5px rgb(128, 146, 247);}
+    100% {text-shadow: 2px 2px 5px rgb(249, 250, 252);}
 }
 
 .navbar-default {
@@ -54,10 +61,16 @@
 }
 
 #home .container .photo {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    margin: 30vh auto 60px;
+    position: relative;
+}
+#home .container .photo .head{
     height: 150px;
     width: 150px;
     border-radius: 50%;
-    margin: 30vh auto 50px;
     overflow: hidden;
 }
 #home .container .photo img{
@@ -67,7 +80,6 @@
 }
 #home .container .photo img:hover{
     transform: scale(1.2);
-    /* transition: transform 0.5s; */
 }
 
 /* menu */
@@ -85,7 +97,7 @@
 .photo:hover .menu{
 	transition: transform 0.4s 0.08s, z-index   0s  0.5s;
 	transform: scale(1);
-	z-index: 10000;
+	z-index: 1;
 }
 .photo .menu li{
 	position: absolute;
@@ -104,9 +116,10 @@
 	border-radius: 50%;
 	background: #fff;
 	position: absolute;
-	font-size: 60%;
+	font-size: 25px;
 	color: #99b977;
-	transition: 0.6s;
+    transition: 0.6s;
+    z-index: 1;
 }
 .photo:hover .menu li:nth-child(1){
 	transition-delay: 0.02s;

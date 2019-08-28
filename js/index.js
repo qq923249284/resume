@@ -1,6 +1,26 @@
 $(function(){
-    $('.photo').addClass('animated bounce');  
+    $('.photo').addClass('animated bounce'); 
+    $('.navbar-nav li').eq(0).click(function (){
+        $('html,body').animate({scrollTop:$("#home").offset().top-70},3000); 
+    });
+    $('.navbar-nav li').eq(1).click(function (){
+        $('html,body').animate({scrollTop:$("#skill").offset().top-70},3000); 
+    });
+    $('.navbar-nav li').eq(2).click(function (){
+        $('html,body').animate({scrollTop:$("#experience").offset().top-70},3000); 
+    });
+    $('.navbar-nav li').eq(3).click(function (){
+        $('html,body').animate({scrollTop:$("#works").offset().top-70},3000); 
+    });
+    $('.navbar-nav li').eq(4).click(function (){
+        $('html,body').animate({scrollTop:$("#oneself").offset().top-70},3000); 
+    });
     
+    
+    
+    function list(id){
+        $('html,body').animate({scrollTop:$(id).offset().top-70},3000); 
+    }
     setTimeout(function(){
         $('#home .text').animate({"width":"100%"})
     }, 1500);
