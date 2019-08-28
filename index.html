@@ -4,15 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" >
     <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/animate.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/index.css">
 </head>
 
-<body>
+<body class="">
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -26,18 +27,31 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="index.html">首页</a></li>
-                    <li><a href="index.html">我的</a></li>
-                    <li><a href="index.html">技能</a></li>
-                    <li><a href="index.html">经历</a></li>
-                    <li><a href="index.html">联系我</a></li>
+                    <li><a href="#skill">技能</a></li>
+                    <li><a href="#experience">经历</a></li>
+                    <li><a href="#works">作品</a></li>
+                    <li><a href="#oneself">我的</a></li>
                 </ul>
             </div>
         </div>
     </nav>
     <div id="home">
         <div class="container">
-            <img src="./image/20140824181343_dhA53.thumb.700_0.png" class="photo">
-            <div class="text">明天不一定更好,但更好的明天一定会来。</div>
+            <div class="photo">
+                <img src="./image/20140824181343_dhA53.thumb.700_0.png">
+                <ul class="menu">
+						<li><a href="#" class="fa fa-facebook"></a></li>
+						<li><a href="#" class="fa fa-google-plus"></a></li>
+						<li><a href="#" class="fa fa-twitter"></a></li>
+						<li><a href="#" class="fa fa-linkedin"></a></li>
+						<li><a href="#" class="fa fa-pinterest"></a></li>
+						<li><a href="#" class="fa fa-rss"></a></li>
+						<li><a href="#" class="fa fa-instagram"></a></li>
+						<li><a href="#" class="fa fa-skype"></a></li>
+						<li><a href="#" class="fa fa-github"></a></li>
+					</ul>
+            </div>
+            <div class="text"> <h3>明天不一定更好,但更好的明天一定会来。</h3> </div>
             <p>大家我，我叫李堰</p>
             <p>一名前端开发工程师</p>
         </div>
@@ -97,16 +111,46 @@
                 <!-- 轮播（Carousel）项目 -->
                 <div class="carousel-inner">
                     <div class="item active">
-                        <img src="./image/m11.png" alt="First slide">
-                        <div class="item-content"></div>
+                        <div class="poto-img">
+                            <img src="./image/m11.png" alt="First slide">
+                        </div>
+                        <div class="item-content">
+                            <h3>深圳市捷睿网络信息有限公司</h3>
+                            <h5>2018.06~2019.07</h5>
+                            <ul>
+                                <li>首页到个人中心页面的功能模块开发</li>
+                                <li>数据的渲染和更新</li>
+                                <li>项目运行代码的管理，性能的优化</li>
+                                <li>版本的迭代更新和维护</li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="item">
-                        <img src="./image/m11.png" alt="Second slide">
-                        <div class="item-content"></div>
+                        <div class="poto-img">
+                            <img src="./image/m11.png" alt="First slide">
+                        </div>
+                        <div class="item-content">
+                            <h3>佛山市春禅互联网服务有限公司</h3>
+                            <h5>2017.05~2018.05</h5>
+                            <ul>
+                                <li>负责PC端移动端页面制作。</li>
+                                <li>利用HTML、JS、CSS3书写前端功能，让页面更充实丰富</li>
+                                <li>学习提升自己原生JS的编码能力</li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="item">
-                        <img src="./image/m11.png" alt="Third slide">
-                        <div class="item-content"></div>
+                        <div class="poto-img">
+                            <img src="./image/m11.png" alt="First slide">
+                        </div>
+                        <div class="item-content">
+                            <h3>2013.9~2016.6</h3>
+                            <ul>
+                                <li>就读于：湖南工业职业技术学院</li>
+                                <li>学历：大专</li>
+                                <li>专业：电气自动化</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -115,23 +159,32 @@
     <div class="picture3 picture"></div>
     <div id="works">
         <div class="container">
+            <h2>我的作品</h2>
             <div class="row">
-                <div class="col-md-1"></div>
-                <div class="col-md-5 rotate"></div>
-                <div class="col-md-5 skill-content"></div>
-                <div class="col-md-1"></div>
+                <div class="col-md-3 col-xs-6">
+                    <div class="content"></div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <div class="content"></div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <div class="content"></div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <div class="content"></div>
+                </div>
             </div>
         </div>
     </div>
     <div class="picture4 picture"></div>
     <div id="oneself">
         <div class="container">
-            <div class="row">
-                <div class="col-md-1"></div>
-                <div class="col-md-5 rotate"></div>
-                <div class="col-md-5 skill-content"></div>
-                <div class="col-md-1"></div>
-            </div>
+            <h2>联系我</h2>
+            <h3>灵感 代码 梦想 未来</h3>
+            <p>本人有良好的团队精神，项目开发过程中积极主动的与各成员沟通交流</p>
+            <p>能长时间承受工作压力，对待工作态度积极，对工作负责</p>
+            <p>能在时间较紧迫的时候完成工作任务</p>
+            <p>能够快速的适应各种工作环境，具有良好的分析能力，自学能力，适应能力</p>
         </div>
     </div>
     <script src="./js/index.js"></script>
